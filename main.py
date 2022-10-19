@@ -45,7 +45,7 @@ def localsg(x, y, m, k): #Локальное сглаживание
                     ych.append(y[j])
                 func = (mnk(xch, ych, m, k))
                 sum = 0.0
-                for i in range(len(x)):
+                for i in range(len(x)): здесь ошибка надо посчитать только в одной точке
                     for j in range(len(func)):
                         sum += x[i] ** j * func[j]
                         print (sum)
